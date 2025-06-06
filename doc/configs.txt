@@ -868,7 +868,7 @@ Snippet to enable the language server: >lua
 
 Default config:
 - filetypes: >lua
-  { "bicep" }
+  { "bicep", "bicep-params" }
 - init_options: >lua
   {}
 - root_markers: >lua
@@ -1286,7 +1286,8 @@ Default config:
   { "clangd" }
 - filetypes: >lua
   { "c", "cpp", "objc", "objcpp", "cuda", "proto" }
-- on_attach (use "gF" to view): ../lsp/clangd.lua:60
+- on_attach (use "gF" to view): ../lsp/clangd.lua:63
+- on_init (use "gF" to view): ../lsp/clangd.lua:63
 - root_markers: >lua
   { ".clangd", ".clang-tidy", ".clang-format", "compile_commands.json", "compile_flags.txt", "configure.ac", ".git" }
 <
