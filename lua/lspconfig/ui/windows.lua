@@ -39,16 +39,17 @@ function win_float.default_opts(options)
     width = width,
     height = height,
     style = 'minimal',
-    border = {
-      { ' ', 'NormalFloat' },
-      { ' ', 'NormalFloat' },
-      { ' ', 'NormalFloat' },
-      { ' ', 'NormalFloat' },
-      { ' ', 'NormalFloat' },
-      { ' ', 'NormalFloat' },
-      { ' ', 'NormalFloat' },
-      { ' ', 'NormalFloat' },
-    },
+    border = 'rounded',
+    -- border = {
+    --   { ' ', 'NormalFloat' },
+    --   { ' ', 'NormalFloat' },
+    --   { ' ', 'NormalFloat' },
+    --   { ' ', 'NormalFloat' },
+    --   { ' ', 'NormalFloat' },
+    --   { ' ', 'NormalFloat' },
+    --   { ' ', 'NormalFloat' },
+    --   { ' ', 'NormalFloat' },
+    -- },
   }
 
   opts.border = options.border and options.border
