@@ -39,17 +39,16 @@ function win_float.default_opts(options)
     width = width,
     height = height,
     style = 'minimal',
-    border = 'rounded',
-    -- border = {
-    --   { ' ', 'NormalFloat' },
-    --   { ' ', 'NormalFloat' },
-    --   { ' ', 'NormalFloat' },
-    --   { ' ', 'NormalFloat' },
-    --   { ' ', 'NormalFloat' },
-    --   { ' ', 'NormalFloat' },
-    --   { ' ', 'NormalFloat' },
-    --   { ' ', 'NormalFloat' },
-    -- },
+    border = {
+      { '╭', 'LspInfoBorder' },
+      { '─', 'LspInfoBorder' },
+      { '╮', 'LspInfoBorder' },
+      { '│', 'LspInfoBorder' },
+      { '╯', 'LspInfoBorder' },
+      { '─', 'LspInfoBorder' },
+      { '╰', 'LspInfoBorder' },
+      { '│', 'LspInfoBorder' },
+      },
   }
 
   opts.border = options.border and options.border
@@ -87,7 +86,7 @@ function win_float.percentage_range_window(col_range, row_range, options)
 
   win_opts.height = math.ceil(vim.o.lines * height_percentage)
   win_opts.row = math.ceil(vim.o.lines * row_start_percentage)
-  win_opts.border = options.border or 'none'
+  win_opts.border = options.border or 'rounded'
 
   local width_percentage, col_start_percentage
   if type(col_range) == 'number' then
